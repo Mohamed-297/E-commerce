@@ -66,8 +66,8 @@ export default function Home() {
                                     <div className="product-buttons">
                                         <Link to={`product/${pro.id}`}><button className="details-button btn btn-secondary">Details</button></Link>
                                         {auth && <button onClick={() => (addToCart(pro.id))} className="add-button btn btn-secondary">
-                                            {itemsInCart.findIndex(item => item.id === pro.id) === -1 ? "Add to Card" : "Added to card"}</button>}
-                                        {!auth && <button onClick={() => setWarningMessage(true)} className="add-button btn btn-secondary">Add to Card</button>}
+                                            {itemsInCart.findIndex(item => item.id === pro.id) === -1 ? "Add to Cart" : "Added to cart"}</button>}
+                                        {!auth && <button onClick={() => setWarningMessage(true)} className="add-button btn btn-secondary">Add to Cart</button>}
                                     </div>
                                 </div>
                             </div>)
