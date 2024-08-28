@@ -1,0 +1,12 @@
+.logo{
+    font-weight: 700;
+}
+.cart-container{
+    margin-right: 20px;
+}
+.navbar.nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+}

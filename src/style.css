@@ -1,0 +1,419 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar  {
+  position: fixed;
+
+}
+.filtering-buttons{
+  margin: 80px 0 0;
+  text-align: center;
+}
+.filtering-buttons button{
+  margin-right: 10px;
+  width: 100px;
+  margin-bottom: 20px;
+}
+.all-products{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+}
+.warning{
+  border-radius: 20px;
+  position: fixed;
+  background: white;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 40%;
+  left: 30%;
+  padding: 20px;
+  box-shadow: 1px 1px 6px 1px gray;
+}
+.warningText{
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+.products-container{
+  margin-bottom: 30px ;
+  width: 25vw;
+}
+.details-container{
+  margin: 80px 0;
+  width: 35vw;
+  flex: 1;
+}
+.theImage:hover{
+  opacity: 0.8;
+}
+.theImage{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: burlywood;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+.details-container img{
+  background-color: coral;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 250px;
+}
+.products-container img{
+  height: 250px;
+  background-color: coral;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.aboutProductDetails{
+  width: 100%;
+  background-color: #eeee;
+  padding: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  
+}
+.aboutProduct{
+  width: 100%;
+  background-color: #eeee;
+  padding: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.aboutProduct .title{
+  width: 100%;
+  word-wrap: break-word;
+}
+.Limited{
+  background-color: red;
+  padding: 5px;
+  width: fit-content;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.Cart-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  padding-top: 70px;
+}
+.cart-item{
+  margin-bottom: 30px ;
+  width: 25vw;
+  
+}
+.empty-cart{
+  display: flex;
+  width: 70%;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  margin: 90px auto;
+  background-color: cyan;
+}
+.cart-container{
+  position: relative;
+  
+}
+.cart-buttons{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.counter-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+
+
+}
+
+.plus,
+.minus{
+flex: 0.2;
+text-align: center;
+background-color: darkgrey;
+padding: 7px;
+border:none;
+outline: none;
+border-radius: 5px;
+}
+.count{
+  flex: 0.5;
+  margin: 0;
+  border-radius: 5px;
+  width: 35px;
+  text-align: center;
+  background: darkgrey;
+  padding: 7px;
+}
+.totalPrice-container{
+  width: 100%;
+  text-align: center;
+}
+.numberOfItemsInCart{
+  position: absolute;
+  background-color: orange;
+  padding: 0 5px;
+  left: 12px;
+  top: -5px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+.product-details-container{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.toggleComments{
+  width: 100%;
+}
+.product-buttons{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.moreImagesForProduct img{
+  width: 55%;
+}
+.moreImagesForProduct{
+  flex: 1 1;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.singleProduct{
+  background-color: #eeee;
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.cart-item img{
+  background-color: coral;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 250px;
+}
+.contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../src/Components/Assets/images/R.jpg) no-repeat;
+  background-size:cover ;
+  background-attachment:fixed ;
+}
+.contact-form input{
+  height:  40px;
+}
+.contact-form input,textarea{
+  padding-left: 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.contact-form div{
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin: auto;
+}
+.contact-form{
+  height: 70vh;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: auto;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  border: 2px solid rebeccapurple;
+}
+.form-container{
+  height: 80%;
+  width: 40%;
+}
+.contact-buttons .btn{
+  margin-bottom: 5px;
+  
+}
+.signIn-Container{
+  height: 80%;
+  width: 40%;
+}
+.signIn-Container h1{
+  color: cornflowerblue;
+}
+.sign-In{ 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../src/Components/Assets/images/loginn.jpg) no-repeat;
+  background-size:cover ;
+  background-attachment:fixed ;
+
+}
+.signIn-form{
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center  ;
+  border-radius: 10px;
+  border: 2px solid rebeccapurple;
+}
+.signInBtn{
+  width: 80%;
+  margin: 20px 0;
+}
+.signIn-form div{
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin: 20px 0;
+
+}
+.signIn-form input{
+  height:  40px;
+}
+.signIn-form label{
+  color: cornflowerblue;
+}
+.signIn-form input,textarea{
+  border: none;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+
+.signUp-container{
+  height: 80%;
+  width: 40%;
+}
+.signUp-Container h1{
+  color: cornflowerblue;
+}
+.sign-Up{ 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../src/Components/Assets/images/background-pp-lucu-cute-powerpoint\ \(2\).jpg) no-repeat;
+  background-size:cover ;
+  background-attachment:fixed ;
+}
+.signUp-form{
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  justify-content: space-evenly  ;
+  border-radius: 10px;
+  border: 2px solid rebeccapurple;
+}
+.signUpBtn{
+  width: 80%;
+  margin: 20px 0;
+}
+.signUp-form div{
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+
+}
+.signUp-form input{
+  height:  40px;
+  padding-left: 15px;
+
+}
+.signUp-form label{
+  color: cornflowerblue;
+}
+.signUp-form input,textarea{
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.errorLogin{
+  color: red;
+}
+.nav-sign{
+  cursor: pointer;
+}
+/* media */
+
+@media screen and (max-width:992px) {
+  
+  .container{
+    width: 80vw;
+  }
+  .products-container{
+    width: 35vw;
+  }
+  .cart-container{
+    margin-top: 20px;
+  }
+  
+}
+@media screen and (max-width:768px) {
+  .container-md, .container-sm, .container{
+    width: 90vw;
+  }
+  .product-buttons button{
+    font-size:  10px;
+  }
+  .products-container{
+    width:42vw;
+  }
+  .signUp-container{
+    width: 70%;
+  }
+  .form-container{
+    width: 70%;
+  }
+  .signIn-Container{
+    width: 70%;
+
+  }
+  .Cart-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .cart-item{
+    width: 55vw;
+  }
+}
+@media (min-width: 576px)  {
+  .container-sm, .container {
+    width: 90vw;
+  }
+
+}
+@media screen and (max-width:481px) {
+  .products-container{
+    width: 75vw;
+  }
+}
